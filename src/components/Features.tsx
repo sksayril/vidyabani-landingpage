@@ -82,7 +82,7 @@ const Features = () => {
                 <div className="relative">
                   <div className="w-32 h-32 mx-auto bg-gradient-to-br from-blue-100 to-blue-200 rounded-full flex items-center justify-center relative overflow-hidden">
                     <img 
-                      src="/public/image.png" 
+                      src="/image.png" 
                       alt="AI Assistant Cat" 
                       className="w-28 h-28 object-cover rounded-full"
                       onError={(e) => {

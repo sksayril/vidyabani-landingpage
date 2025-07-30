@@ -153,7 +153,7 @@ const About = () => {
             <div className="w-32 h-32 mx-auto mb-6 relative">
               <div className="w-32 h-32 bg-gradient-to-br from-yellow-400 to-yellow-500 rounded-full flex items-center justify-center relative overflow-hidden animate-float">
                 <img 
-                  src="/public/image.png" 
+                  src="/image.png" 
                   alt="Vidyabani Team Mascot" 
                   className="w-28 h-28 object-cover rounded-full hover:scale-110 transition-transform duration-300"
                   onError={(e) => {

@@ -80,7 +80,7 @@ const Hero = () => {
               <div className="text-center space-y-6">
                 <div className="w-48 h-48 mx-auto bg-gradient-to-br from-blue-100 to-blue-200 rounded-full flex items-center justify-center relative overflow-hidden">
                   <img 
-                    src="/public/image.png" 
+                    src="/image.png" 
                     alt="Vidyabani Mascot Cat" 
                     className="w-40 h-40 object-cover rounded-full"
                     onError={(e) => {

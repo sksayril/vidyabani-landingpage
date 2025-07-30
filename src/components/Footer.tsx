@@ -11,7 +11,7 @@ const Footer = () => {
             <div className="flex items-center space-x-3">
               <div className="w-12 h-12 bg-gradient-to-br from-yellow-400 to-yellow-500 rounded-full flex items-center justify-center">
                 <img 
-                  src="/public/image.png" 
+                  src="/image.png" 
                   alt="Vidyabani Cat" 
                   className="w-8 h-8 rounded-full object-cover"
                   onError={(e) => {

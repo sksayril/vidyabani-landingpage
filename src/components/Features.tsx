@@ -1,5 +1,6 @@
 import React from 'react';
 import { Mic, Brain, MessageCircle, Volume2, Headphones, Zap } from 'lucide-react';
+import { handleRedirectClick } from '../utils/redirects';
 
 const Features = () => {
   return (
@@ -116,11 +117,17 @@ const Features = () => {
                 </div>
 
                 <div className="flex justify-center space-x-4">
-                  <button className="bg-blue-600 text-white px-6 py-3 rounded-full hover:bg-blue-700 transition-colors flex items-center space-x-2">
+                  <button 
+                    onClick={() => handleRedirectClick('ai-assistant')}
+                    className="bg-blue-600 text-white px-6 py-3 rounded-full hover:bg-blue-700 transition-colors flex items-center space-x-2"
+                  >
                     <Mic className="w-5 h-5" />
                     <span>Start Talking</span>
                   </button>
-                  <button className="bg-gray-200 text-gray-700 px-6 py-3 rounded-full hover:bg-gray-300 transition-colors flex items-center space-x-2">
+                  <button 
+                    onClick={() => handleRedirectClick('ai-assistant')}
+                    className="bg-gray-200 text-gray-700 px-6 py-3 rounded-full hover:bg-gray-300 transition-colors flex items-center space-x-2"
+                  >
                     <Headphones className="w-5 h-5" />
                     <span>Listen</span>
                   </button>

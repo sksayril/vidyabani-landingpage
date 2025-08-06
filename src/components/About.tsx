@@ -1,5 +1,6 @@
 import React from 'react';
 import { BookOpen, Users, Award, Target, Heart, Zap, Globe, Shield } from 'lucide-react';
+import { handleRedirectClick } from '../utils/redirects';
 
 const About = () => {
   const stats = [
@@ -175,7 +176,10 @@ const About = () => {
               we're here to guide you on your educational journey!
             </p>
             
-            <button className="bg-yellow-400 text-blue-900 px-8 py-3 rounded-full font-semibold hover:bg-yellow-300 transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl">
+            <button 
+              onClick={() => handleRedirectClick('community')}
+              className="bg-yellow-400 text-blue-900 px-8 py-3 rounded-full font-semibold hover:bg-yellow-300 transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl"
+            >
               Join Our Community
             </button>
           </div>

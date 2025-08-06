@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Menu, X, BookOpen, Users, Award, Mic } from 'lucide-react';
+import { handleRedirectClick } from '../utils/redirects';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -37,7 +38,10 @@ const Header = () => {
               About
               <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-blue-600 group-hover:w-full transition-all duration-300"></span>
             </a>
-            <button className="bg-blue-600 text-white px-6 py-2 rounded-full hover:bg-blue-700 transition-all duration-300 transform hover:scale-105 hover:shadow-lg">
+            <button 
+              onClick={() => handleRedirectClick()}
+              className="bg-blue-600 text-white px-6 py-2 rounded-full hover:bg-blue-700 transition-all duration-300 transform hover:scale-105 hover:shadow-lg"
+            >
               Get Started
             </button>
           </nav>
@@ -58,7 +62,10 @@ const Header = () => {
               <a href="#courses" className="text-gray-700 hover:text-blue-600 transition-colors">Courses</a>
               <a href="#features" className="text-gray-700 hover:text-blue-600 transition-colors">Features</a>
               <a href="#about" className="text-gray-700 hover:text-blue-600 transition-colors">About</a>
-              <button className="bg-blue-600 text-white px-6 py-2 rounded-full hover:bg-blue-700 transition-colors w-fit">
+              <button 
+                onClick={() => handleRedirectClick()}
+                className="bg-blue-600 text-white px-6 py-2 rounded-full hover:bg-blue-700 transition-colors w-fit"
+              >
                 Get Started
               </button>
             </div>

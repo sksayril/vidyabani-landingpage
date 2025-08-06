@@ -1,5 +1,6 @@
 import React from 'react';
 import { BookOpen, Mail, Phone, MapPin, Facebook, Twitter, Instagram, Youtube } from 'lucide-react';
+import { handleRedirectClick } from '../utils/redirects';
 
 const Footer = () => {
   return (
@@ -89,7 +90,10 @@ const Footer = () => {
                   placeholder="Your email"
                   className="flex-1 px-3 py-2 rounded-l-lg text-gray-800 focus:outline-none"
                 />
-                <button className="bg-yellow-400 text-blue-900 px-4 py-2 rounded-r-lg hover:bg-yellow-300 transition-colors font-semibold">
+                <button 
+                  onClick={() => handleRedirectClick('newsletter')}
+                  className="bg-yellow-400 text-blue-900 px-4 py-2 rounded-r-lg hover:bg-yellow-300 transition-colors font-semibold"
+                >
                   Subscribe
                 </button>
               </div>

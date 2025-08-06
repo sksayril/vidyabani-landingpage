@@ -1,5 +1,6 @@
 import React from 'react';
 import { BookOpen, Star, Users, Award, Mic, Brain } from 'lucide-react';
+import { handleRedirectClick } from '../utils/redirects';
 
 const Hero = () => {
   return (
@@ -49,10 +50,16 @@ const Hero = () => {
 
             {/* CTA Buttons */}
             <div className="flex flex-col sm:flex-row gap-4">
-              <button className="bg-yellow-400 text-blue-900 px-8 py-4 rounded-full font-semibold text-lg hover:bg-yellow-300 transition-colors shadow-lg">
+              <button 
+                onClick={() => handleRedirectClick()}
+                className="bg-yellow-400 text-blue-900 px-8 py-4 rounded-full font-semibold text-lg hover:bg-yellow-300 transition-colors shadow-lg"
+              >
                 Start Learning Now
               </button>
-              <button className="border-2 border-white text-white px-8 py-4 rounded-full font-semibold text-lg hover:bg-white hover:text-blue-900 transition-colors">
+              <button 
+                onClick={() => handleRedirectClick('courses')}
+                className="border-2 border-white text-white px-8 py-4 rounded-full font-semibold text-lg hover:bg-white hover:text-blue-900 transition-colors"
+              >
                 Explore Courses
               </button>
             </div>
@@ -97,7 +104,10 @@ const Hero = () => {
                   <p className="text-blue-600">I'm here to help you learn with AI-powered assistance</p>
                 </div>
                 <div className="flex justify-center">
-                  <button className="bg-blue-600 text-white px-6 py-3 rounded-full hover:bg-blue-700 transition-colors flex items-center space-x-2">
+                  <button 
+                    onClick={() => handleRedirectClick('ai-assistant')}
+                    className="bg-blue-600 text-white px-6 py-3 rounded-full hover:bg-blue-700 transition-colors flex items-center space-x-2"
+                  >
                     <Mic className="w-5 h-5" />
                     <span>Talk to Me!</span>
                   </button>

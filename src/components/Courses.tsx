@@ -1,5 +1,6 @@
 import React from 'react';
 import { BookOpen, GraduationCap, Trophy, Users, Clock, Star } from 'lucide-react';
+import { handleRedirectClick } from '../utils/redirects';
 
 const Courses = () => {
   const courseCategories = [
@@ -89,7 +90,10 @@ const Courses = () => {
                     </div>
                   </div>
 
-                  <button className="w-full bg-blue-600 text-white py-3 rounded-lg hover:bg-blue-700 transition-colors font-semibold">
+                  <button 
+                    onClick={() => handleRedirectClick(`courses/${category.title.toLowerCase().replace(/\s+/g, '-')}`)}
+                    className="w-full bg-blue-600 text-white py-3 rounded-lg hover:bg-blue-700 transition-colors font-semibold"
+                  >
                     Explore {category.title}
                   </button>
                 </div>
